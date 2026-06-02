@@ -20,10 +20,11 @@ export default function Home() {
         </section>
 
         <section className="relative">
-          <img
-            src="/01.webp"
-            alt="Balloon"
-            className="h-full w-full object-cover"
+        <img
+          src="/pictures/01.png"
+          alt="Balloon"
+          className="h-full w-full object-cover"
+        />
           />
         </section>
 
