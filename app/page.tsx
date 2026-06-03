@@ -37,7 +37,7 @@ export default function Home() {
 
               <p>
                 <a
-                  href="mailto:yian@yian.ch"
+                  href="mailto:atelier@yian.ch"
                   className="underline underline-offset-4 hover:text-white"
                 >
                   yian@yian.ch
