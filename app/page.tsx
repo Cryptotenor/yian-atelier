@@ -40,7 +40,7 @@ export default function Home() {
                   href="mailto:atelier@yian.ch"
                   className="underline underline-offset-4 hover:text-white"
                 >
-                  yian@yian.ch
+                  atelier@yian.ch
                 </a>
               </p>
             </div>
