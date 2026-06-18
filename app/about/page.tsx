@@ -1,5 +1,6 @@
 const navItems = [
   ["Works", "/balloon-series"],
+  ["Audience", "/exhibition-views"],
   ["About", "/about"],
   ["CV", "/cv"],
   ["Contact", "/contact"],

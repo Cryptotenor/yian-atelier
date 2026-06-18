@@ -9,6 +9,7 @@ const works = [
 
 const navItems = [
   ["Works", "/balloon-series"],
+  ["Audience", "/exhibition-views"],
   ["About", "/about"],
   ["CV", "/cv"],
   ["Contact", "/contact"],
@@ -84,6 +85,9 @@ export default function BalloonSeries() {
         <nav className="mt-20 flex flex-wrap gap-x-7 gap-y-4 border-t border-[#d8d1c6] pt-6 text-sm">
           <a className="border-b border-current" href="/">
             Home
+          </a>
+          <a className="border-b border-current" href="/exhibition-views">
+            Audience
           </a>
           <a className="border-b border-current" href="/about">
             About
