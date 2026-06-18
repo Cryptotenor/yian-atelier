@@ -38,16 +38,24 @@ export default function Home() {
             Visual artist based in Luzern, Switzerland
           </p>
           <p className="mt-8 max-w-2xl text-[17px] leading-relaxed text-[#2b2a27]">
-            My son received his first balloon.
-            Ｈe did not want to keep it.
-            He wanted to watch it fly.
-            He asked for another.
-            And another.
-            They all fly.
-            The last balloon came home with us.
-            For a while, it floated
-            quietly in our living room.
-            Then, it fell asleep.
+            <p>My son received his first balloon.</p>
+
+            <p>He did not want to keep it.</p>
+
+            <p>He wanted to watch it fly.</p>
+
+            <p>He asked for another.</p>
+
+            <p>And another.</p>
+            
+            <p>They all fly.</p>
+
+            <p>The last balloon came home with us.</p>
+
+            <p>For a while, it floated<p>
+            <p>quietly in our living room.</p>
+
+            <p>Then, it fell asleep.</p>
           </p>
           <div className="mt-8 flex flex-wrap gap-x-7 gap-y-4 text-sm">
             <a className="border-b border-current" href="/balloon-series">
