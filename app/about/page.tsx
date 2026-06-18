@@ -35,11 +35,24 @@ export default function About() {
         </div>
 
         <p className="max-w-3xl text-lg leading-relaxed text-[#2b2a27]">
-          Yi-An Chen is a Taiwan-born artist based in Lucerne, Switzerland.
-          Trained as a classical singer, he works across AI-generated imagery,
-          installation, and participatory viewing situations. His visual
-          practice explores interpretation, memory, tenderness, and the unstable
-          relationship between holding on and letting go.
+        <p>
+          His works do not follow a fixed workflow. Some begin as drawings and are
+          later re-rendered through AI. Others start from AI-generated images and are
+          extensively reconstructed through digital editing. Images may pass through
+          multiple stages of compositing, modification, enhancement, and upscaling
+          before reaching their final printed form.
+        </p>
+          <p>
+            Chen develops his work with physical presentation in mind. Every image is
+            created with printing as its final destination. Rather than remaining on
+            screens, his works are intended to enter exhibition spaces, public
+            environments, and private homes.
+          </p>
+          <p>
+            He is interested in how artworks become part of everyday life—encountered
+            not only in galleries, but also in the places people live, gather, and
+            remember.
+          </p>
         </p>
 
         <nav className="mt-20 flex flex-wrap gap-x-7 gap-y-4 border-t border-[#d8d1c6] pt-6 text-sm">
