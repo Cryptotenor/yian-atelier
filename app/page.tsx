@@ -35,12 +35,19 @@ export default function Home() {
             Yi-An Chen
           </h1>
           <p className="mt-6 max-w-xl text-[clamp(18px,2vw,23px)] leading-snug text-[#66615a]">
-            Visual artist based in Lucerne, Switzerland
+            Visual artist based in Luzern, Switzerland
           </p>
           <p className="mt-8 max-w-2xl text-[17px] leading-relaxed text-[#2b2a27]">
-            Yi-An Chen works with AI-generated imagery, installation, and viewer
-            participation. His Balloon Series explores interpretation, memory,
-            and the relationship between people and the things they hold.
+            My son received his first balloon.
+            Ｈe did not want to keep it.
+            He wanted to watch it fly.
+            He asked for another.
+            And another.
+            They all fly.
+            The last balloon came home with us.
+            For a while, it floated
+            quietly in our living room.
+            Then, it fell asleep.
           </p>
           <div className="mt-8 flex flex-wrap gap-x-7 gap-y-4 text-sm">
             <a className="border-b border-current" href="/balloon-series">
