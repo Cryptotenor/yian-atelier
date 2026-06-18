@@ -37,7 +37,7 @@ export default function Home() {
           <p className="mt-6 max-w-xl text-[clamp(18px,2vw,23px)] leading-snug text-[#66615a]">
             Visual artist based in Luzern, Switzerland
           </p>
-          <p className="mt-8 max-w-2xl text-[17px] leading-relaxed text-[#2b2a27]">
+          <div className="mt-8 max-w-2xl space-y-4 text-[17px] leading-relaxed text-[#2b2a27]">
             <p>My son received his first balloon.</p>
 
             <p>He did not want to keep it.</p>
@@ -52,11 +52,11 @@ export default function Home() {
 
             <p>The last balloon came home with us.</p>
 
-            <p>For a while, it floated<p>
+            <p>For a while, it floated</p>
             <p>quietly in our living room.</p>
 
             <p>Then, it fell asleep.</p>
-          </p>
+          </div>
           <div className="mt-8 flex flex-wrap gap-x-7 gap-y-4 text-sm">
             <a className="border-b border-current" href="/balloon-series">
               View Balloon Series
