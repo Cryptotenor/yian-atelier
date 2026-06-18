@@ -1,9 +1,9 @@
 const works = {
-  needle: ["Needle", "Sewing the Sky"],
-  door: ["Door", "Exit"],
-  gallery: ["Gallery", "The Interpreter"],
-  boy: ["Boy", "Reach"],
-  man: ["Man", "The Reader"],
+  needle: ["Needle", "Needle"],
+  door: ["Door", "Door"],
+  gallery: ["Gallery", "Gallery"],
+  boy: ["Boy", "Boy"],
+  man: ["Man", "Man"],
   ballet: ["Ballet", "Ballet"],
 } as const;
 

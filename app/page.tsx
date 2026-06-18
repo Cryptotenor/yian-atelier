@@ -70,7 +70,7 @@ export default function Home() {
         <img
           className="max-h-[78vh] w-full bg-[#e8e1d8] object-cover"
           src="/pictures/balloon-series/works/Needle2.jpg"
-          alt="Sewing the Sky from Balloon Series"
+          alt="Needle from Balloon Series"
         />
       </section>
     </main>
