@@ -36,11 +36,11 @@ export default function Contact() {
         <dl className="max-w-2xl">
           <div className="grid gap-2 border-b border-[#d8d1c6] py-5 md:grid-cols-[110px_1fr] md:gap-6">
             <dt className="text-[#66615a]">Email</dt>
-            <dd>[leave placeholder]</dd>
+            <dd>atelier@yian.ch</dd>
           </div>
           <div className="grid gap-2 border-b border-[#d8d1c6] py-5 md:grid-cols-[110px_1fr] md:gap-6">
             <dt className="text-[#66615a]">Instagram</dt>
-            <dd>[leave placeholder]</dd>
+            <dd>@yianchen1120</dd>
           </div>
           <div className="grid gap-2 border-b border-[#d8d1c6] py-5 md:grid-cols-[110px_1fr] md:gap-6">
             <dt className="text-[#66615a]">Website</dt>
