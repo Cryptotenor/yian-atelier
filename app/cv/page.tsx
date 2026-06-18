@@ -42,7 +42,7 @@ export default function CV() {
           </p>
         </section>
         <section className="grid gap-3 border-b border-[#d8d1c6] py-8 md:grid-cols-[220px_1fr] md:gap-9">
-          <h2 className="text-sm font-bold">Selected Exhibition</h2>
+          <h2 className="text-sm font-bold">Exhibition</h2>
           <p className="text-[17px]">
             2026 — Balloon Series, Atelier Yi-An, Lucerne, Switzerland
           </p>
