@@ -124,6 +124,33 @@ h1 {
   font-size: 17px;
 }
 
+.text-links,
+.page-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 18px 28px;
+}
+
+.text-links {
+  margin-top: 34px;
+}
+
+.text-links a,
+.page-links a {
+  border-bottom: 1px solid currentColor;
+  color: var(--text);
+  font-size: 14px;
+  line-height: 1.4;
+}
+
+.text-links a:hover,
+.text-links a:focus-visible,
+.page-links a:hover,
+.page-links a:focus-visible {
+  text-decoration: none;
+  color: var(--muted);
+}
+
 .hero-image {
   width: 100%;
   max-height: 78vh;
@@ -226,6 +253,12 @@ h1 {
 
 .contact-label {
   color: var(--muted);
+}
+
+.page-links {
+  margin-top: 70px;
+  padding-top: 24px;
+  border-top: 1px solid var(--soft);
 }
 
 @media (max-width: 900px) {
