@@ -1,3 +1,10 @@
+const navItems = [
+  ["Works", "/balloon-series"],
+  ["About", "/about"],
+  ["CV", "/cv"],
+  ["Contact", "/contact"],
+];
+
 export default function Home() {
   return (
     <main className="min-h-screen bg-[#f7f4ee] text-[#111111]">
@@ -6,14 +13,15 @@ export default function Home() {
           className="mx-auto flex max-w-[1180px] flex-col gap-4 px-5 py-5 text-sm sm:flex-row sm:items-center sm:justify-between sm:px-7"
           aria-label="Main navigation"
         >
-          <a className="font-bold" href="index.html">
+          <a className="font-bold" href="/">
             Yi-An Chen
           </a>
           <div className="flex flex-wrap gap-x-6 gap-y-3 text-[#66615a]">
-            <a href="balloon-series.html">Works</a>
-            <a href="about.html">About</a>
-            <a href="cv.html">CV</a>
-            <a href="contact.html">Contact</a>
+            {navItems.map(([label, href]) => (
+              <a key={href} href={href}>
+                {label}
+              </a>
+            ))}
           </div>
         </nav>
       </header>
@@ -35,10 +43,10 @@ export default function Home() {
             and the relationship between people and the things they hold.
           </p>
           <div className="mt-8 flex flex-wrap gap-x-7 gap-y-4 text-sm">
-            <a className="border-b border-current" href="balloon-series.html">
+            <a className="border-b border-current" href="/balloon-series">
               View Balloon Series
             </a>
-            <a className="border-b border-current" href="about.html">
+            <a className="border-b border-current" href="/about">
               About the artist
             </a>
           </div>
@@ -46,7 +54,7 @@ export default function Home() {
 
         <img
           className="max-h-[78vh] w-full bg-[#e8e1d8] object-cover"
-          src="pictures/balloon-series/works/Needle2.jpg"
+          src="/pictures/balloon-series/works/Needle2.jpg"
           alt="Sewing the Sky from Balloon Series"
         />
       </section>
