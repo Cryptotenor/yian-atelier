@@ -1,9 +1,9 @@
 const works = [
-  ["Needle2.jpg", "Sewing the Sky"],
-  ["Door2.jpg", "Exit"],
-  ["Gallery2.jpg", "The Interpreter"],
-  ["Boy2.jpg", "Reach"],
-  ["Man2.jpg", "The Reader"],
+  ["Needle2.jpg", "Needle"],
+  ["Door2.jpg", "Door"],
+  ["Gallery2.jpg", "Gallery"],
+  ["Boy2.jpg", "Boy"],
+  ["Man2.jpg", "Man"],
   ["Ballet2.jpg", "Ballet"],
 ];
 
