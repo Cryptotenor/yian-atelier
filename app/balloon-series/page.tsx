@@ -66,7 +66,7 @@ export default function BalloonSeries() {
                 <span className="block text-[#66615a]">
                   Balloon Series, 2026
                 </span>
-                <span className="block text-[#66615a]">AI-generated image</span>
+                <span className="block text-[#66615a]">AI-assisted digital image</span>
                 <span className="block text-[#66615a]">
                   Pigment print on paper
                 </span>
