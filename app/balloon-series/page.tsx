@@ -1,10 +1,10 @@
 const works = [
-  ["Needle2.jpg", "Needle"],
-  ["Door2.jpg", "Door"],
-  ["Gallery2.jpg", "Gallery"],
-  ["Boy2.jpg", "Boy"],
-  ["Man2.jpg", "Man"],
-  ["Ballet2.jpg", "Ballet"],
+  ["needle", "Needle2.jpg", "Sewing the Sky"],
+  ["door", "Door2.jpg", "Exit"],
+  ["gallery", "Gallery2.jpg", "The Interpreter"],
+  ["boy", "Boy2.jpg", "Reach"],
+  ["man", "Man2.jpg", "The Reader"],
+  ["ballet", "Ballet2.jpg", "Ballet"],
 ];
 
 const navItems = [
@@ -54,19 +54,25 @@ export default function BalloonSeries() {
         </div>
 
         <div className="grid gap-x-7 gap-y-14 md:grid-cols-2 lg:grid-cols-3">
-          {works.map(([filename, title]) => (
+          {works.map(([slug, filename, title]) => (
             <figure key={filename}>
-              <img
-                className="w-full bg-[#e8e1d8]"
-                src={`/pictures/balloon-series/works/${filename}`}
-                alt={title}
-              />
+              <a href={`/balloon-series/${slug}`} aria-label={`View ${title}`}>
+                <img
+                  className="w-full bg-[#e8e1d8] transition-opacity hover:opacity-85"
+                  src={`/pictures/balloon-series/works/${filename}`}
+                  alt={title}
+                />
+              </a>
               <figcaption className="mt-4 text-sm leading-relaxed">
-                <span className="block font-bold">{title}</span>
+                <a className="block font-bold" href={`/balloon-series/${slug}`}>
+                  {title}
+                </a>
                 <span className="block text-[#66615a]">
                   Balloon Series, 2026
                 </span>
-                <span className="block text-[#66615a]">AI-assisted digital image</span>
+                <span className="block text-[#66615a]">
+                  AI-assisted digital image
+                </span>
                 <span className="block text-[#66615a]">
                   Pigment print on paper
                 </span>
