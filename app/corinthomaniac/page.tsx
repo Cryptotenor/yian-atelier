@@ -91,7 +91,7 @@ export default function Corinthomaniac() {
             <h1 className="break-words text-[clamp(42px,8.5vw,110px)] font-normal leading-[0.92]">Corinthomaniac</h1>
           </div>
           <div className="self-end space-y-5 text-[17px] leading-relaxed text-[#66615a]">
-            <p className="text-xl leading-snug text-[#111111]">我越想把你留下來，<br />你越不是我記得的你。</p>
+            <p className="text-xl leading-snug text-[#111111]">越是把你留下，<br />越不是我記得的樣子。</p>
             <p>The more I kept you, the less you were the person I knew.</p>
           </div>
         </header>
