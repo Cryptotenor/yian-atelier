@@ -13,7 +13,7 @@ const series = [
     image: "/pictures/corinthomaniac/02-robot-canvas-and-future.png",
     alt: "Corinthomaniac Canvas and Future interface",
     description:
-      "An evolving drawing system in which generated futures are observed, drawn and returned to shape what appears next.",
+      "An evolving drawing system in which a generated Future is repeatedly observed, drawn and fed back into what appears next.",
   },
   {
     title: "Balloon Series",

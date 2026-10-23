@@ -17,12 +17,12 @@ const systemTerms = [
   {
     number: "02",
     title: "Canvas",
-    text: "A changing condition of drawing. Its marks guide the next Future, but they also fade, so the image cannot be held permanently.",
+    text: "The evolving drawing surface. Its marks shape the next Future, but gradually fade, preventing the image from becoming permanent.",
   },
   {
     number: "03",
     title: "Kibutades",
-    text: "The drawing body. It observes the Future and turns a temporary digital image into marks with time, resistance and disappearance.",
+    text: "The drawing body. It observes the Future and translates a temporary digital image into physical marks shaped by time, resistance and disappearance.",
   },
 ];
 
@@ -50,7 +50,7 @@ const feedbackLoop = [
   {
     number: "05",
     title: "Look again",
-    text: "The system observes the altered image again and continues drawing.",
+    text: "The system observes the newly generated Future and begins another drawing cycle.",
   },
 ];
 
@@ -108,8 +108,8 @@ export default function Corinthomaniac() {
         <section className="grid gap-10 border-b border-[#d8d1c6] py-20 md:grid-cols-[0.7fr_1.3fr]">
           <h2 className="text-3xl">Drawing is access</h2>
           <div className="max-w-2xl space-y-5 text-[18px] leading-relaxed">
-            <p>Corinthomaniac begins with the act of drawing someone who is absent. It is not a machine for completing portraits. Drawing is the action through which an absent figure can become visible for a while.</p>
-            <p>The connection remains one-sided, yet the activity continues. Its emotional force comes from this repetition, not from a claim that the machine itself loves, remembers or grieves.</p>
+            <p>Corinthomaniac begins with an attempt to draw someone who is absent. It is not a machine designed to complete portraits. Through the act of drawing, an absent figure becomes temporarily visible.</p>
+            <p>The relationship between the drawing system and the absent person remains one-sided, yet the act continues. Its emotional force comes from repetition, not from any claim that the machine itself loves, remembers or grieves.</p>
             <p className="text-2xl leading-snug">The person is absent, but the relationship continues as an activity.</p>
           </div>
         </section>
@@ -123,7 +123,7 @@ export default function Corinthomaniac() {
             <figcaption className="mb-8 grid gap-3 md:grid-cols-[0.7fr_1.3fr]">
               <h3 className="text-2xl" id="feedback-loop-title">How the system sees and draws</h3>
               <p className="max-w-2xl text-[15px] leading-relaxed text-[#66615a]">
-                Future is not a fixed reference image. It is regenerated while the drawing develops, forming a continuous feedback cycle between the imagined face and the marks already made.
+                Future is not a fixed reference image. It is continuously regenerated from the evolving Canvas. Each new Future is observed and drawn again, creating a feedback loop between the imagined face and the marks already made.
               </p>
             </figcaption>
             <ol className="grid border-t border-[#d8d1c6] md:grid-cols-5" aria-label="Realtime Future and Canvas feedback cycle">
@@ -154,7 +154,7 @@ export default function Corinthomaniac() {
         <section className="grid gap-10 border-b border-[#d8d1c6] py-20 md:grid-cols-[0.7fr_1.3fr]">
           <h2 className="text-3xl">Stability is not truth</h2>
           <div className="max-w-2xl space-y-5 text-[18px] leading-relaxed">
-            <p>As the Canvas feeds back into the Future, the face may gradually become more stable. But stability does not mean that it has become more accurate. The system may be converging on a figure shaped by its own repeated traces.</p>
+            <p>As the Canvas feeds back into the Future, the face may gradually become more stable. But stability does not mean greater fidelity to the absent person. The system may instead be converging on a figure shaped by its own repeated traces.</p>
             <p>The marks on the Canvas slowly disappear. As their support weakens, the machine must continue drawing to maintain the face that has begun to appear. Fading is a material rule of the work; memory, longing and loss remain possible readings rather than measured machine emotions.</p>
             <p className="text-2xl leading-snug">When does remembering become replacing?</p>
           </div>
