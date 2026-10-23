@@ -1,5 +1,5 @@
 const navItems = [
-  ["Works", "/balloon-series"],
+  ["Works", "/works"],
   ["Audience", "/exhibition-views"],
   ["About", "/about"],
   ["CV", "/cv"],
@@ -57,7 +57,7 @@ export default function Contact() {
           <a className="border-b border-current" href="/">
             Home
           </a>
-          <a className="border-b border-current" href="/balloon-series">
+          <a className="border-b border-current" href="/works">
             Works
           </a>
         </nav>

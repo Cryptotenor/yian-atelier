@@ -1,5 +1,5 @@
 const navItems = [
-  ["Works", "/balloon-series"],
+  ["Works", "/works"],
   ["Audience", "/exhibition-views"],
   ["About", "/about"],
   ["CV", "/cv"],
@@ -150,7 +150,7 @@ export default function ExhibitionViews() {
         </div>
 
         <nav className="mt-20 flex flex-wrap gap-x-7 gap-y-4 border-t border-[#d8d1c6] pt-6 text-sm">
-          <a className="border-b border-current" href="/balloon-series">
+          <a className="border-b border-current" href="/works">
             Works
           </a>
           <a className="border-b border-current" href="/about">

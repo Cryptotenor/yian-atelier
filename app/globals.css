@@ -26,3 +26,24 @@ body {
 a {
   text-underline-offset: 0.2em;
 }
+
+@keyframes corinthomaniac-pan-left-to-right {
+  from {
+    object-position: left center;
+  }
+
+  to {
+    object-position: right center;
+  }
+}
+
+.corinthomaniac-pan {
+  animation: corinthomaniac-pan-left-to-right 40s ease-in-out forwards;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .corinthomaniac-pan {
+    animation: none;
+    object-position: center;
+  }
+}
