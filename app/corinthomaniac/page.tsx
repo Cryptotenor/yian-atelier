@@ -1,8 +1,11 @@
 import ProjectVideo from "./ProjectVideo";
+import type { Metadata } from "next";
+
+export const metadata: Metadata = { title: "Corinthomaniac" };
 
 const navItems = [
   ["Works", "/works"],
-  ["Audience", "/exhibition-views"],
+  ["Exhibition Views", "/exhibition-views"],
   ["About", "/about"],
   ["CV", "/cv"],
   ["Contact", "/contact"],

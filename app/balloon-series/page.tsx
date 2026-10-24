@@ -1,3 +1,7 @@
+import type { Metadata } from "next";
+
+export const metadata: Metadata = { title: "Balloon Series" };
+
 const works = [
   { prefix: "Needle", title: "Needle" },
   { prefix: "Door", title: "Door" },
@@ -9,7 +13,7 @@ const works = [
 
 const navItems = [
   ["Works", "/works"],
-  ["Audience", "/exhibition-views"],
+  ["Exhibition Views", "/exhibition-views"],
   ["About", "/about"],
   ["CV", "/cv"],
   ["Contact", "/contact"],
@@ -62,7 +66,7 @@ export default function BalloonSeries() {
         <nav className="mt-24 flex flex-wrap gap-x-7 gap-y-4 border-t border-[#d8d1c6] pt-6 text-sm">
           <a className="border-b border-current" href="/works">All Works</a>
           <a className="border-b border-current" href="/corinthomaniac">Corinthomaniac</a>
-          <a className="border-b border-current" href="/exhibition-views">Audience</a>
+          <a className="border-b border-current" href="/exhibition-views">Exhibition Views</a>
         </nav>
       </section>
     </main>

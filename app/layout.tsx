@@ -2,7 +2,10 @@ import type { Metadata } from "next";
 import "./globals.css";
 
 export const metadata: Metadata = {
-  title: "Yi-An Chen",
+  title: {
+    default: "Yi-An Chen",
+    template: "%s — Yi-An Chen",
+  },
   description: "Visual artist based in Lucerne, Switzerland.",
 };
 

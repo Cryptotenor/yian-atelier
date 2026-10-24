@@ -1,6 +1,10 @@
+import type { Metadata } from "next";
+
+export const metadata: Metadata = { title: "Works" };
+
 const navItems = [
   ["Works", "/works"],
-  ["Audience", "/exhibition-views"],
+  ["Exhibition Views", "/exhibition-views"],
   ["About", "/about"],
   ["CV", "/cv"],
   ["Contact", "/contact"],
@@ -14,6 +18,7 @@ const series = [
     alt: "Corinthomaniac Canvas and Future interface",
     description:
       "An evolving drawing system in which a generated Future is repeatedly observed, drawn and fed back into what appears next.",
+    details: "2026 · Generative drawing system · Ongoing",
   },
   {
     title: "Balloon Series",
@@ -22,6 +27,7 @@ const series = [
     alt: "Needle from Balloon Series",
     description:
       "One person, one blue balloon, and a sequence of images open to memory, projection and interpretation.",
+    details: "2026 · AI-assisted digital image · Pigment print on paper",
   },
 ];
 
@@ -49,7 +55,10 @@ export default function Works() {
               </a>
               <div className="mt-5 grid gap-3 sm:grid-cols-[1fr_1.15fr]">
                 <h2 className="text-2xl"><a href={item.href}>{item.title}</a></h2>
-                <p className="text-[15px] leading-relaxed text-[#66615a]">{item.description}</p>
+                <div>
+                  <p className="mb-3 text-xs uppercase tracking-[0.08em] text-[#66615a]">{item.details}</p>
+                  <p className="text-[15px] leading-relaxed text-[#66615a]">{item.description}</p>
+                </div>
               </div>
             </article>
           ))}

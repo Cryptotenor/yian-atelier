@@ -1,6 +1,10 @@
+import type { Metadata } from "next";
+
+export const metadata: Metadata = { title: "CV" };
+
 const navItems = [
   ["Works", "/works"],
-  ["Audience", "/exhibition-views"],
+  ["Exhibition Views", "/exhibition-views"],
   ["About", "/about"],
   ["CV", "/cv"],
   ["Contact", "/contact"],
@@ -42,14 +46,25 @@ export default function CV() {
           </p>
         </section>
         <section className="grid gap-3 border-b border-[#d8d1c6] py-8 md:grid-cols-[220px_1fr] md:gap-9">
-          <h2 className="text-sm font-bold">Exhibition</h2>
+          <h2 className="text-sm font-bold">Selected Exhibitions</h2>
           <p className="text-[17px]">
             2026 — Balloon Series, Atelier Yi-An, Lucerne, Switzerland
           </p>
         </section>
         <section className="grid gap-3 border-b border-[#d8d1c6] py-8 md:grid-cols-[220px_1fr] md:gap-9">
+          <h2 className="text-sm font-bold">Projects</h2>
+          <div className="space-y-2 text-[17px]">
+            <p>2026 — Corinthomaniac, generative drawing system, ongoing</p>
+            <p>2026 — Balloon Series, AI-assisted digital images and pigment prints</p>
+          </div>
+        </section>
+        <section className="grid gap-3 border-b border-[#d8d1c6] py-8 md:grid-cols-[220px_1fr] md:gap-9">
           <h2 className="text-sm font-bold">Professional Background</h2>
           <p className="text-[17px]">Tenor, Luzerner Theater, Switzerland</p>
+        </section>
+        <section className="grid gap-3 border-b border-[#d8d1c6] py-8 md:grid-cols-[220px_1fr] md:gap-9">
+          <h2 className="text-sm font-bold">Location</h2>
+          <p className="text-[17px]">Based in Lucerne, Switzerland</p>
         </section>
 
         <nav className="mt-20 flex flex-wrap gap-x-7 gap-y-4 text-sm">

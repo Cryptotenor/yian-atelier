@@ -1,6 +1,10 @@
+import type { Metadata } from "next";
+
+export const metadata: Metadata = { title: "About" };
+
 const navItems = [
   ["Works", "/works"],
-  ["Audience", "/exhibition-views"],
+  ["Exhibition Views", "/exhibition-views"],
   ["About", "/about"],
   ["CV", "/cv"],
   ["Contact", "/contact"],
@@ -34,14 +38,17 @@ export default function About() {
           </p>
         </div>
 
-        <p className="max-w-3xl text-lg leading-relaxed text-[#2b2a27]">
-        <p>
+        <div className="max-w-3xl space-y-6 text-lg leading-relaxed text-[#2b2a27]">
+          <p className="text-2xl leading-snug text-[#111111]">
+            Yi-An Chen works with memory, absence, projection and the act of looking. His images ask how an absent person can remain present—and how every attempt to hold an image may also transform it.
+          </p>
+          <p>
           His works do not follow a fixed workflow. Some begin as drawings and are
           later re-rendered through AI. Others start from AI-generated images and are
           extensively reconstructed through digital editing. Images may pass through
           multiple stages of compositing, modification, enhancement, and upscaling
           before reaching their final printed form.
-        </p>
+          </p>
           <p>
             Chen develops his work with physical presentation in mind. Every image is
             created with printing as its final destination. Rather than remaining on
@@ -53,7 +60,7 @@ export default function About() {
             not only in galleries, but also in the places people live, gather, and
             remember.
           </p>
-        </p>
+        </div>
 
         <nav className="mt-20 flex flex-wrap gap-x-7 gap-y-4 border-t border-[#d8d1c6] pt-6 text-sm">
           <a className="border-b border-current" href="/works">

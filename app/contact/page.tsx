@@ -1,6 +1,10 @@
+import type { Metadata } from "next";
+
+export const metadata: Metadata = { title: "Contact" };
+
 const navItems = [
   ["Works", "/works"],
-  ["Audience", "/exhibition-views"],
+  ["Exhibition Views", "/exhibition-views"],
   ["About", "/about"],
   ["CV", "/cv"],
   ["Contact", "/contact"],
@@ -37,11 +41,19 @@ export default function Contact() {
         <dl className="max-w-2xl">
           <div className="grid gap-2 border-b border-[#d8d1c6] py-5 md:grid-cols-[110px_1fr] md:gap-6">
             <dt className="text-[#66615a]">Email</dt>
-            <dd>atelier@yian.ch</dd>
+            <dd>
+              <a className="border-b border-current" href="mailto:atelier@yian.ch">
+                atelier@yian.ch
+              </a>
+            </dd>
           </div>
           <div className="grid gap-2 border-b border-[#d8d1c6] py-5 md:grid-cols-[110px_1fr] md:gap-6">
             <dt className="text-[#66615a]">Instagram</dt>
-            <dd>@yianchen1120</dd>
+            <dd>
+              <a className="border-b border-current" href="https://www.instagram.com/yianchen1120/" target="_blank" rel="noreferrer">
+                @yianchen1120
+              </a>
+            </dd>
           </div>
           <div className="grid gap-2 border-b border-[#d8d1c6] py-5 md:grid-cols-[110px_1fr] md:gap-6">
             <dt className="text-[#66615a]">Website</dt>
