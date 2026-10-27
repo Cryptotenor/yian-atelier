@@ -114,9 +114,30 @@ export default function Corinthomaniac() {
         <section className="grid gap-10 border-b border-[#d8d1c6] py-20 md:grid-cols-[0.7fr_1.3fr]">
           <h2 className="text-3xl">Drawing is access</h2>
           <div className="max-w-2xl space-y-5 text-[18px] leading-relaxed">
-            <p>Corinthomaniac begins with an attempt to draw someone who is absent. It is not a machine designed to complete portraits. Through the act of drawing, an absent figure becomes temporarily visible.</p>
-            <p>The relationship between the drawing system and the absent person remains one-sided, yet the act continues. Its emotional force comes from repetition, not from any claim that the machine itself loves, remembers or grieves.</p>
-            <p className="text-2xl leading-snug">The person is absent, but the relationship continues as an activity.</p>
+            <p className="text-2xl font-bold leading-snug">
+              Corinthomaniac is an AI(artificial intelligence) embodied through
+              a drawing machine.
+            </p>
+            <p>
+              It continuously generates the image of an absent figure—its <em>Future</em>—and
+              attempts to draw what it sees.
+            </p>
+            <p>
+              The drawing itself influences what Corinthomaniac will see next.
+              As it draws, the face in its Future gradually becomes more stable.
+              But the marks on the canvas cannot remain. They slowly fade, and
+              the image begins to lose its form.
+            </p>
+            <p>To see her again, Corinthomaniac must continue drawing.</p>
+            <p>
+              It does not draw to complete a portrait. Drawing is the act through
+              which the absent figure can temporarily become present.
+            </p>
+            <p>The person is absent, but the connection continues as an activity.</p>
+            <p>
+              So Corinthomaniac draws.<br />
+              Again and again.
+            </p>
           </div>
         </section>
 
