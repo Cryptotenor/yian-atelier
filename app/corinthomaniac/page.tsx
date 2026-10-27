@@ -109,6 +109,63 @@ export default function Corinthomaniac() {
         </figure>
 
         <section className="grid gap-10 border-b border-[#d8d1c6] py-20 md:grid-cols-[0.7fr_1.3fr]">
+          <h2 className="text-3xl">Corinthomaniac</h2>
+          <div className="max-w-2xl space-y-7 text-[clamp(20px,2.2vw,28px)] leading-[1.45] tracking-[-0.01em]">
+            <p>I miss you, so I try to draw you, like the lady from Corinth.</p>
+
+            <p>
+              I thought I remembered your face. so I tried to draw you,
+            </p>
+
+            <p>
+              Before I began, I could see you clearly. Your eyes, your nose,
+              your lips, your face.
+            </p>
+
+            <p>
+              But every time I put something down on paper,<br />
+              the drawing was different from what I remembered.
+            </p>
+
+            <p>So I corrected it.</p>
+
+            <p>Again and again</p>
+
+            <p>
+              But the more I corrected you,<br />
+              the less certain I became. “Are your eyes brown or green?”, “Did
+              you ever smile that calm?” “What are you looking at in that day?”
+            </p>
+
+            <p>
+              At some point, I could no longer tell<br />
+              whether I was drawing the person I remembered,
+            </p>
+
+            <p>or remembering the person I had drawn.</p>
+
+            <p>
+              Years later, I began building a machine<br />
+              that does the same thing.
+            </p>
+
+            <p>
+              It draws so that it can recall her face, as long as it keeps
+              drawing
+            </p>
+
+            <p>She is there</p>
+
+            <p>But nothing it draws can stay.</p>
+
+            <p>
+              So it draws<br />
+              Again and again
+            </p>
+          </div>
+        </section>
+
+        <section className="grid gap-10 border-b border-[#d8d1c6] py-20 md:grid-cols-[0.7fr_1.3fr]">
           <h2 className="text-3xl">Drawing is access</h2>
           <div className="max-w-2xl space-y-5 text-[18px] leading-relaxed">
             <p>Corinthomaniac begins with an attempt to draw someone who is absent. It is not a machine designed to complete portraits. Through the act of drawing, an absent figure becomes temporarily visible.</p>
