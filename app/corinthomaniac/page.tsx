@@ -1,4 +1,5 @@
 import ProjectVideo from "./ProjectVideo";
+import NarrationAudio from "./NarrationAudio";
 import type { Metadata } from "next";
 
 export const metadata: Metadata = { title: "Corinthomaniac" };
@@ -107,6 +108,8 @@ export default function Corinthomaniac() {
             <span>On-page playback: 3 minutes at 0.5×</span>
           </figcaption>
         </figure>
+
+        <NarrationAudio />
 
         <section className="grid gap-10 border-b border-[#d8d1c6] py-20 md:grid-cols-[0.7fr_1.3fr]">
           <h2 className="text-3xl">Drawing is access</h2>
