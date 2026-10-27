@@ -111,9 +111,9 @@ export default function Corinthomaniac() {
 
         <NarrationAudio />
 
-        <section className="grid gap-10 border-b border-[#d8d1c6] py-20 md:grid-cols-[0.7fr_1.3fr]">
-          <h2 className="text-3xl">Drawing is access</h2>
-          <div className="max-w-2xl space-y-5 text-[18px] leading-relaxed">
+        <section className="border-b border-[#d8d1c6] py-20">
+          <h2 className="mb-12 text-3xl">Drawing is access</h2>
+          <div className="max-w-3xl space-y-5 text-[18px] leading-relaxed">
             <p className="text-2xl font-bold leading-snug">
               Corinthomaniac is an AI(artificial intelligence) embodied through
               a drawing machine.
