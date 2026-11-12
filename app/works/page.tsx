@@ -12,6 +12,15 @@ const navItems = [
 
 const series = [
   {
+    title: "Live Canvas",
+    href: "/live-canvas",
+    image: "/pictures/live-canvas/live-canvas-concept.png",
+    alt: "Live Canvas drawing and generated image on an iPad",
+    description:
+      "An interactive drawing project in which gesture, language and machine interpretation continuously reshape one another.",
+    details: "2026 · Interactive generative drawing system · Ongoing",
+  },
+  {
     title: "Corinthomaniac",
     href: "/corinthomaniac",
     image: "/pictures/corinthomaniac/02-robot-canvas-and-future.png",
@@ -50,7 +59,7 @@ export default function Works() {
             <article key={item.href}>
               <a href={item.href} aria-label={`View ${item.title}`}>
                 <div className="aspect-[4/5] overflow-hidden bg-[#e8e1d8]">
-                  <img className="h-full w-full object-cover transition duration-500 hover:scale-[1.015] hover:opacity-90" src={item.image} alt={item.alt} />
+                  <img className={`h-full w-full object-cover transition duration-500 hover:scale-[1.015] hover:opacity-90 ${item.href === "/live-canvas" ? "object-right" : "object-center"}`} src={item.image} alt={item.alt} />
                 </div>
               </a>
               <div className="mt-5 grid gap-3 sm:grid-cols-[1fr_1.15fr]">

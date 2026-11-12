@@ -36,8 +36,12 @@ export default function Home() {
         </article>
 
         <div className="mt-16 border-y border-[#d8d1c6] py-6">
+          <a className="flex items-baseline justify-between gap-5 border-b border-[#d8d1c6] pb-6" href="/live-canvas">
+            <span className="text-[clamp(28px,4vw,48px)]">Live Canvas</span>
+            <span className="text-sm text-[#66615a]">View project →</span>
+          </a>
           <a className="flex items-baseline justify-between gap-5" href="/balloon-series">
-            <span className="text-[clamp(28px,4vw,48px)]">Balloon Series</span>
+            <span className="pt-6 text-[clamp(28px,4vw,48px)]">Balloon Series</span>
             <span className="text-sm text-[#66615a]">View project →</span>
           </a>
         </div>
