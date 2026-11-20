@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import "./globals.css";
+import ProjectAudioProvider from "./ProjectAudio";
 
 export const metadata: Metadata = {
   title: {
@@ -16,7 +17,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body>{children}</body>
+      <body><ProjectAudioProvider>{children}</ProjectAudioProvider></body>
     </html>
   );
 }
