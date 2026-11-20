@@ -1,3 +1,4 @@
+import Link from "next/link";
 import ProjectVideo from "./ProjectVideo";
 import NarrationAudio from "./NarrationAudio";
 import type { Metadata } from "next";
@@ -10,24 +11,6 @@ const navItems = [
   ["About", "/about"],
   ["CV", "/cv"],
   ["Contact", "/contact"],
-];
-
-const systemTerms = [
-  {
-    number: "01",
-    title: "Future",
-    text: "The face the system can see at this moment. It is shaped by the character model, the current Canvas and the ongoing act of generation.",
-  },
-  {
-    number: "02",
-    title: "Canvas",
-    text: "The evolving drawing surface. Its marks shape the next Future, but gradually fade, preventing the image from becoming permanent.",
-  },
-  {
-    number: "03",
-    title: "Kibutades",
-    text: "The drawing body. It observes the Future and translates a temporary digital image into physical marks shaped by time, resistance and disappearance.",
-  },
 ];
 
 const feedbackLoop = [
@@ -44,7 +27,7 @@ const feedbackLoop = [
   {
     number: "03",
     title: "Draw",
-    text: "Kibutades translates what it sees into marks on the Canvas.",
+    text: "The drawing agent translates observed contours into marks on the Canvas.",
   },
   {
     number: "04",
@@ -81,7 +64,7 @@ export default function Corinthomaniac() {
     <main className="min-h-screen bg-[#f7f4ee] text-[#111111]">
       <header className="sticky top-0 z-20 border-b border-[#d8d1c6] bg-[#f7f4ee]/95 backdrop-blur">
         <nav className="mx-auto flex max-w-[1180px] flex-col gap-4 px-5 py-5 text-sm sm:flex-row sm:items-center sm:justify-between sm:px-7" aria-label="Main navigation">
-          <a className="font-bold" href="/">Yi-An Chen</a>
+          <Link className="font-bold" href="/">Yi-An Chen</Link>
           <div className="flex flex-wrap gap-x-6 gap-y-3 text-[#66615a]">
             {navItems.map(([label, href]) => <a key={href} href={href}>{label}</a>)}
           </div>
@@ -112,31 +95,24 @@ export default function Corinthomaniac() {
         <NarrationAudio />
 
         <section className="border-b border-[#d8d1c6] py-20">
-          <h2 className="mb-12 text-3xl">Drawing is access</h2>
+          <h2 className="mb-12 text-3xl">A ritual entrusted to a machine</h2>
           <div className="max-w-3xl space-y-5 text-[18px] leading-relaxed">
             <p className="text-2xl font-bold leading-snug">
-              Corinthomaniac is an AI(artificial intelligence) embodied through
-              a drawing machine.
+              I entrusted the ritual of missing someone to a machine.
             </p>
             <p>
-              It continuously generates the image of an absent figure—its <em>Future</em>—and
-              attempts to draw what it sees.
+              I wanted to draw a face I held in my mind. My drawings were clumsy;
+              they never quite resembled her. The image in my mind would not stay still either.
+              I built Corinthomaniac so that the act of drawing could continue after I left.
             </p>
             <p>
-              The drawing itself influences what Corinthomaniac will see next.
-              As it draws, the face in its Future gradually becomes more stable.
-              But the marks on the canvas cannot remain. They slowly fade, and
-              the image begins to lose its form.
+              The work brings two images into view: <em>Future</em>, a continuously
+              generated face, and <em>Canvas</em>, the drawing made in response to it.
+              The drawing changes the image it follows, while its own marks gradually fade.
             </p>
-            <p>To see her again, Corinthomaniac must continue drawing.</p>
             <p>
-              It does not draw to complete a portrait. Drawing is the act through
-              which the absent figure can temporarily become present.
-            </p>
-            <p>The person is absent, but the connection continues as an activity.</p>
-            <p>
-              So Corinthomaniac draws.<br />
-              Again and again.
+              There is no final portrait to arrive at. The work gives the effort of
+              holding on a form that can continue: looking, drawing, looking again.
             </p>
           </div>
         </section>
@@ -150,10 +126,13 @@ export default function Corinthomaniac() {
             <figcaption className="mb-8 grid gap-3 md:grid-cols-[0.7fr_1.3fr]">
               <h3 className="text-2xl" id="feedback-loop-title">How the system sees and draws</h3>
               <p className="max-w-2xl text-[15px] leading-relaxed text-[#66615a]">
-                Future is not a fixed reference image. It is continuously regenerated from the evolving Canvas. Each new Future is observed and drawn again, creating a feedback loop between the imagined face and the marks already made.
+                The drawing system works from snapshots, planning a group of strokes before observing again. Prompt, subject LoRA and interpolated noise also shape Future; Canvas is one of several inputs.
               </p>
             </figcaption>
-            <ol className="grid border-t border-[#d8d1c6] md:grid-cols-5" aria-label="Realtime Future and Canvas feedback cycle">
+            <a href="/pictures/corinthomaniac/feedback-cycle.png" target="_blank" rel="noreferrer" className="mb-8 block" aria-label="Open the feedback cycle diagram at full size">
+              <img src="/pictures/corinthomaniac/feedback-cycle.png" width={1800} height={1350} alt="Future snapshot → locate facial regions and plan contours → draw and fade on Canvas → feed Canvas back to generate a new Future. Prompt, LoRA and interpolated noise also affect generation." className="h-auto w-full" />
+            </a>
+            <ol className="grid border-t border-[#d8d1c6] md:hidden" aria-label="Realtime Future and Canvas feedback cycle">
               {feedbackLoop.map((item, index) => (
                 <li className="relative border-b border-[#d8d1c6] py-6 pr-10 last:border-b-0 md:border-b-0 md:border-r md:px-5 md:first:pl-0 md:last:border-r-0 md:last:pr-0" key={item.number}>
                   <span className="text-xs text-[#66615a]">{item.number}</span>
@@ -167,24 +146,63 @@ export default function Corinthomaniac() {
             </ol>
             <p className="mt-6 text-right text-xs uppercase tracking-[0.12em] text-[#66615a]">Continuous observation</p>
           </figure>
-          <div className="mt-12 grid gap-7 border-t border-[#d8d1c6] pt-7 md:grid-cols-3">
-            {systemTerms.map((item) => (
-              <section key={item.title}>
-                <p className="text-xs text-[#66615a]">{item.number}</p>
-                <h3 className="mt-3 text-2xl">{item.title}</h3>
-                <p className="mt-4 text-[15px] leading-relaxed text-[#66615a]">{item.text}</p>
-              </section>
-            ))}
+
+        </section>
+
+        <section className="grid gap-10 border-b border-[#d8d1c6] py-20 md:grid-cols-[0.7fr_1.3fr]">
+          <h2 className="text-3xl">Let the action speak</h2>
+          <div className="max-w-2xl space-y-5 text-[18px] leading-relaxed">
+            <p>My approach to Corinthomaniac grows out of my experience as a performer. My teacher taught me to work through form—gesture, movement and action—without deliberately illustrating an emotion. Emotional meaning could emerge through the action itself.</p>
+            <p>I came to understand this lesson partly through Symbolist theatre: a gesture can suggest an experience without illustrating it directly. My teacher also introduced me to Jerzy Grotowski; through that exploration, I later came to know Vsevolod Meyerhold indirectly. Their work opens two different perspectives on my own practice.</p>
+            <p>I find one perspective in Grotowski’s exploration of inner impulse and physical action. Corinthomaniac began with longing, became an attempt to draw someone from memory, and eventually led me to build a machine. Although I am not physically present in the gallery, the machine continues an action that began with me. Perhaps I never entirely left the performance.</p>
+            <p>I find another in Meyerhold’s understanding of the spectator as a participant in the creation of theatrical meaning. I do not ask the machine to perform sadness. I do not script a pause to make it appear hesitant. Its rhythm emerges from computation, observation and drawing. One viewer may recognise hesitation in a line; another may simply watch the movement.</p>
+            <p>The action originates in my experience, but its meaning is not entirely mine to determine.</p>
+            <p className="text-2xl leading-snug">What continues there—me, or something I once did?</p>
+            <details className="border-t border-[#d8d1c6] pt-5 text-[15px] text-[#66615a]">
+              <summary className="cursor-pointer text-[#111111]">Artistic Research &amp; References</summary>
+              <div className="mt-4 space-y-4 leading-relaxed">
+                <p>Further points of comparison in this research:</p>
+                <ul className="list-disc space-y-3 pl-5">
+                  <li>William Forsythe: choreography and action structures beyond the original performer’s body.</li>
+                  <li>Stefan Kaegi: the relation between a mechanical stand-in and an absent person.</li>
+                  <li>Kris Verdonck: nonhuman performers, repeated actions and the meanings spectators bring to them.</li>
+                </ul>
+                <p>These are thematic connections, not claims of direct lineage. Audience interpretation is also distinct from the technical feedback loop between Future and Canvas: the current system does not establish reciprocal interaction with viewers.</p>
+              </div>
+            </details>
           </div>
         </section>
 
         <section className="grid gap-10 border-b border-[#d8d1c6] py-20 md:grid-cols-[0.7fr_1.3fr]">
-          <h2 className="text-3xl">Stability is not truth</h2>
+          <h2 className="text-3xl">Recognition and uncertainty</h2>
           <div className="max-w-2xl space-y-5 text-[18px] leading-relaxed">
-            <p>As the Canvas feeds back into the Future, the face may gradually become more stable. But stability does not mean greater fidelity to the absent person. The system may instead be converging on a figure shaped by its own repeated traces.</p>
-            <p>The marks on the Canvas slowly disappear. As their support weakens, the machine must continue drawing to maintain the face that has begun to appear. Fading is a material rule of the work; memory, longing and loss remain possible readings rather than measured machine emotions.</p>
+            <p>A face becoming more consistent would not make it more faithful to the person I remember. The image is shaped by a model and by the traces the system itself has made. Recognition, for me, remains uncertain.</p>
+            <p>The fading marks are a programmed condition of the work. They are not evidence that the machine remembers or forgets.</p>
             <p className="text-2xl leading-snug">When does remembering become replacing?</p>
           </div>
+        </section>
+
+        <section className="grid gap-10 border-b border-[#d8d1c6] py-20 md:grid-cols-[0.7fr_1.3fr]">
+          <h2 className="text-3xl">Current presentation</h2>
+          <div className="max-w-2xl space-y-5 text-[18px] leading-relaxed">
+            <p>The current prototype is digital. The proposed exhibition installation presents Future and Canvas side by side within a single 27-inch monitor, allowing visitors to observe the generated image and the drawing process simultaneously.</p>
+            <p>The installation is intended to operate continuously, with a short introductory text. Spoken narration and an experimental soundscape are being considered as additional elements.</p>
+            <p>A future development, provisionally called Kibutades, would introduce a robotic arm drawing with water on a reusable water-writing surface. As the water evaporates, the drawing would physically disappear. A camera could return these changing traces to the generative system.</p>
+            <p>This physical version remains a proposal.</p>
+          </div>
+        </section>
+
+        <section className="border-b border-[#d8d1c6] py-16" aria-labelledby="installation-title">
+          <h2 id="installation-title" className="text-3xl">Imagining the installation</h2>
+          <p className="mt-4 max-w-2xl text-[16px] leading-relaxed text-[#66615a]">Concept visualisations, not photographs of realised exhibitions.</p>
+          <figure className="mt-10">
+            <img src="/pictures/corinthomaniac/dual-screen-installation-concept.png" width={1536} height={1024} loading="lazy" className="h-auto w-full" alt="Concept visualisation of a visitor watching Future and Canvas on two adjacent gallery screens." />
+            <figcaption className="mt-4 text-sm leading-relaxed text-[#66615a]"><span className="font-semibold text-[#111111]">01 / Earlier two-screen concept.</span> An earlier arrangement, now superseded by the single-monitor proposal above.</figcaption>
+          </figure>
+          <figure className="mt-12">
+            <img src="/pictures/corinthomaniac/robotic-installation-concept.png" width={1536} height={1024} loading="lazy" className="h-auto w-full" alt="Concept visualisation of a robotic arm drawing a portrait beneath a screen, watched by a visitor." />
+            <figcaption className="mt-4 text-sm leading-relaxed text-[#66615a]"><span className="font-semibold text-[#111111]">02 / Future physical development.</span> A spatial study for Kibutades. Water-writing and camera feedback remain to be developed.</figcaption>
+          </figure>
         </section>
 
         <section className="py-20">
