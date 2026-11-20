@@ -107,13 +107,14 @@ export default function Corinthomaniac() {
             </p>
             <p>
               The work brings two images into view: <em>Future</em>, a continuously
-              generated face, and <em>Canvas</em>, the drawing made in response to it.
+              generated face, and <em>Canvas</em>, the drawing made in response by
+              Kibutades, the work’s digital drawing agent.
               The drawing changes the image it follows, while its own marks gradually fade.
             </p>
-            <p>
-              There is no final portrait to arrive at. The work gives the effort of
-              holding on a form that can continue: looking, drawing, looking again.
-            </p>
+            <div className="border-l border-[#d8d1c6] pl-5">
+              <h3 className="mb-2 text-xl">Drawing is access</h3>
+              <p>Drawing gives me a way to return to the absent figure. There is no final portrait to arrive at; the connection takes the form of an ongoing act.</p>
+            </div>
           </div>
         </section>
 
@@ -174,7 +175,7 @@ export default function Corinthomaniac() {
         </section>
 
         <section className="grid gap-10 border-b border-[#d8d1c6] py-20 md:grid-cols-[0.7fr_1.3fr]">
-          <h2 className="text-3xl">Recognition and uncertainty</h2>
+          <h2 className="text-3xl">Stability is not truth</h2>
           <div className="max-w-2xl space-y-5 text-[18px] leading-relaxed">
             <p>A face becoming more consistent would not make it more faithful to the person I remember. The image is shaped by a model and by the traces the system itself has made. Recognition, for me, remains uncertain.</p>
             <p>The fading marks are a programmed condition of the work. They are not evidence that the machine remembers or forgets.</p>
@@ -187,8 +188,7 @@ export default function Corinthomaniac() {
           <div className="max-w-2xl space-y-5 text-[18px] leading-relaxed">
             <p>The current prototype is digital. The proposed exhibition installation presents Future and Canvas side by side within a single 27-inch monitor, allowing visitors to observe the generated image and the drawing process simultaneously.</p>
             <p>The installation is intended to operate continuously, with a short introductory text. Spoken narration and an experimental soundscape are being considered as additional elements.</p>
-            <p>A future development, provisionally called Kibutades, would introduce a robotic arm drawing with water on a reusable water-writing surface. As the water evaporates, the drawing would physically disappear. A camera could return these changing traces to the generative system.</p>
-            <p>This physical version remains a proposal.</p>
+            <p>Kibutades currently draws on the digital Canvas. A future physical version would use a robotic arm to draw with water on a reusable water-writing surface. Evaporation would make the marks disappear, and a camera could return those changing traces to the generative system. The robotic arm, water-writing and camera feedback remain proposed developments, not completed features.</p>
           </div>
         </section>
 
@@ -201,7 +201,7 @@ export default function Corinthomaniac() {
           </figure>
           <figure className="mt-12">
             <img src="/pictures/corinthomaniac/robotic-installation-concept.png" width={1536} height={1024} loading="lazy" className="h-auto w-full" alt="Concept visualisation of a robotic arm drawing a portrait beneath a screen, watched by a visitor." />
-            <figcaption className="mt-4 text-sm leading-relaxed text-[#66615a]"><span className="font-semibold text-[#111111]">02 / Future physical development.</span> A spatial study for Kibutades. Water-writing and camera feedback remain to be developed.</figcaption>
+            <figcaption className="mt-4 text-sm leading-relaxed text-[#66615a]"><span className="font-semibold text-[#111111]">02 / Proposed physical Kibutades.</span> A spatial study of the future robotic version, distinct from the existing digital drawing agent.</figcaption>
           </figure>
         </section>
 
