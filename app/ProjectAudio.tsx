@@ -81,7 +81,7 @@ export default function ProjectAudioProvider({ children }: { children: React.Rea
       <source src="/audio/corinthomaniac-narration.mp3?v=20261120" type="audio/mpeg" />
     </audio>
     <audio ref={music} preload="metadata" loop aria-label="Background audio" onError={() => setError(true)}>
-      <source src="/audio/corinthomaniac-ambience.mp3?v=balanced-20261120" type="audio/mpeg" />
+      <source src="/audio/corinthomaniac-ambience.mp3?v=plus2db-20261120" type="audio/mpeg" />
     </audio>
   </AudioContext.Provider>;
 }
